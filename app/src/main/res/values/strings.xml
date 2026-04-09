@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Chowafa - Fortune Teller</string>
+    <string name="tab_chat">Chat</string>
+    <string name="tab_horoscope">Horoscope</string>
+    <string name="tab_cards">Cards</string>
+    <string name="type_message">Type your question…</string>
+    <string name="send">Send</string>
+</resources>
