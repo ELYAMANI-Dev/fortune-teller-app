@@ -34,6 +34,8 @@ android {
         versionCode = 1
         versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+
+        buildConfigField("String", "MIXPANEL_TOKEN", "\"${localProperties.getProperty("MIXPANEL_TOKEN", "")}\"")
     }
 
     buildTypes {
@@ -59,10 +61,12 @@ android {
     }
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 }
 
 dependencies {
+    implementation("com.mixpanel.android:mixpanel-android:7.+")
     implementation(libs.androidx.core.ktx)
     implementation("androidx.core:core-splashscreen:1.0.1")
     implementation(libs.androidx.lifecycle.runtime.ktx)
